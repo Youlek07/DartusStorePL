@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formularz zamowienia DartusStorePL - uzupelnij dane dostawy i wybierz platnosc.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Julian Machowski 4TP">
+
+  <title>Zamowienie - DartusStorePL</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/koszyk.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Dartus<span>Store</span>PL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Przelacz nawigacje">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="produkty.html">Produkty</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#brands">Marki</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="produkty.html" class="text-decoration-none nav-search-link" aria-label="Wyszukaj">
+          <i class="bi bi-search fs-5" aria-hidden="true"></i>
+        </a>
+        <a href="koszyk.html" class="btn-cart text-decoration-none" aria-label="Koszyk, 3 produkty">
+          <i class="bi bi-bag" aria-hidden="true"></i> Koszyk <span class="cart-badge">3</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <nav aria-label="Sciezka nawigacyjna">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Strona główna</a></li>
+        <li class="breadcrumb-item"><a href="koszyk.html">Koszyk</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Zamówienie</li>
+      </ol>
+    </nav>
+    <h1 class="page-title">Dane <span>zamówienia</span></h1>
+    <p class="page-subtitle">Uzupełnij dane dostawy i wybierz metodę platności</p>
+  </div>
+</header>
+
+<div class="checkout-steps">
+  <div class="container">
+    <ol class="steps-list" aria-label="Etapy zamowienia">
+      <li class="step done">
+        <span class="step-num" aria-hidden="true"><i class="bi bi-check" aria-hidden="true"></i></span>
+        <span class="step-label">Koszyk</span>
+      </li>
+      <li class="step-divider" aria-hidden="true"></li>
+      <li class="step active" aria-current="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <span class="step-label">Zamówienie</span>
+      </li>
+      <li class="step-divider" aria-hidden="true"></li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <span class="step-label">Platność</span>
+      </li>
+      <li class="step-divider" aria-hidden="true"></li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">4</span>
+        <span class="step-label">Potwierdzenie</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<main>
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+        <section class="form-section" aria-labelledby="heading-personal">
+          <h2 class="form-section-title" id="heading-personal">
+            <span class="form-section-num" aria-hidden="true">1</span> Dane osobowe
+          </h2>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label-custom">Imię <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="firstName" name="firstName" class="form-input-custom" placeholder="Jan" required autocomplete="given-name">
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label-custom">Nazwisko <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="lastName" name="lastName" class="form-input-custom" placeholder="Kowalski" required autocomplete="family-name">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label-custom">E-mail <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-input-custom" placeholder="jan@email.pl" required autocomplete="email">
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label-custom">Telefon <span class="required" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" class="form-input-custom" placeholder="+48 600 000 000" required autocomplete="tel">
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="heading-address">
+          <h2 class="form-section-title" id="heading-address">
+            <span class="form-section-num" aria-hidden="true">2</span> Adres dostawy
+          </h2>
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="street" class="form-label-custom">Ulica i numer <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="street" name="street" class="form-input-custom" placeholder="ul. Przykladowa 12/3" required>
+            </div>
+            <div class="col-md-4">
+              <label for="zip" class="form-label-custom">Kod pocztowy <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="zip" name="zip" class="form-input-custom" placeholder="00-000" required autocomplete="postal-code" pattern="[0-9]{2}-[0-9]{3}">
+            </div>
+            <div class="col-md-8">
+              <label for="city" class="form-label-custom">Miasto <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="city" name="city" class="form-input-custom" placeholder="Warszawa" required autocomplete="address-level2">
+            </div>
+            <div class="col-12">
+              <label for="country" class="form-label-custom">Kraj</label>
+              <select id="country" name="country" class="form-select-custom" autocomplete="country-name">
+                <option value="PL" selected>Polska</option>
+                <option value="DE">Niemcy</option>
+                <option value="CZ">Czechy</option>
+                <option value="SK">Slowacja</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="notes" class="form-label-custom">Uwagi do zamówienia</label>
+              <textarea id="notes" name="notes" class="form-input-custom form-textarea" rows="3" placeholder="Np. kod do domofonu, godziny dostawy..."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="heading-invoice">
+          <h2 class="form-section-title" id="heading-invoice">
+            <span class="form-section-num" aria-hidden="true">3</span> Faktura VAT
+          </h2>
+          <label class="toggle-label">
+            <input type="checkbox" id="needsInvoice" name="needsInvoice">
+            <span class="toggle-text">Chcę otrzymać fakturę VAT</span>
+          </label>
+          <div class="invoice-fields" id="invoiceFields" aria-hidden="true">
+            <div class="row g-3 mt-2">
+              <div class="col-12">
+                <label for="companyName" class="form-label-custom">Nazwa firmy <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="companyName" name="companyName" class="form-input-custom" placeholder="Przykladowa Sp. z o.o." autocomplete="organization">
+              </div>
+              <div class="col-md-6">
+                <label for="nip" class="form-label-custom">NIP <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="nip" name="nip" class="form-input-custom" placeholder="000-000-00-00" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="heading-payment">
+          <h2 class="form-section-title" id="heading-payment">
+            <span class="form-section-num" aria-hidden="true">4</span> Metoda platności
+          </h2>
+          <div class="payment-options" role="radiogroup" aria-label="Wybierz metode platnosci">
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="blik" checked>
+              <span class="payment-option-body">
+                <span class="payment-icon">&#128240;</span>
+                <span>
+                  <span class="payment-name">BLIK</span>
+                  <span class="payment-desc">Szybka platność kodem BLIK</span>
+                </span>
+              </span>
+              <span class="payment-badge">Popularne</span>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="card">
+              <span class="payment-option-body">
+                <span class="payment-icon">&#128179;</span>
+                <span>
+                  <span class="payment-name">Karta płatnicza</span>
+                  <span class="payment-desc">Visa, Mastercard, Maestro</span>
+                </span>
+              </span>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="transfer">
+              <span class="payment-option-body">
+                <span class="payment-icon">&#127968;</span>
+                <span>
+                  <span class="payment-name">Przelew bankowy</span>
+                  <span class="payment-desc">Szybki przelew online</span>
+                </span>
+              </span>
+            </label>
+
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cod">
+              <span class="payment-option-body">
+                <span class="payment-icon">&#128176;</span>
+                <span>
+                  <span class="payment-name">Za pobraniem</span>
+                  <span class="payment-desc">Płatnosc przy odbiorze (+5 zł)</span>
+                </span>
+              </span>
+            </label>
+
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="heading-terms">
+          <h2 class="visually-hidden" id="heading-terms">Zgody i regulamin</h2>
+          <div class="row g-2">
+            <div class="col-12">
+              <label class="toggle-label">
+                <input type="checkbox" id="terms" name="terms" required>
+                <span class="toggle-text">
+                  Akceptuje <a href="#" class="form-link">Regulamin sklepu</a> oraz
+                  <a href="#" class="form-link">Polityke prywatnosci</a>
+                  <span class="required" aria-hidden="true">*</span>
+                </span>
+              </label>
+            </div>
+            <div class="col-12">
+              <label class="toggle-label">
+                <input type="checkbox" id="marketing" name="marketing">
+                <span class="toggle-text">Zgadzam się na otrzymywanie informacji marketingowych</span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="col-lg-4">
+        <aside class="summary-card" aria-label="Podsumowanie zamowienia">
+          <h2 class="summary-title">Twoje zamówienie</h2>
+
+          <ul class="mini-cart-list" aria-label="Produkty w zamowieniu">
+            <li class="mini-cart-item">
+              <span class="mini-cart-img" aria-hidden="true">&#127919;</span>
+              <span class="mini-cart-name">Produkt 1 <span class="mini-cart-qty">x2</span></span>
+              <span class="mini-cart-price">19,98 zł</span>
+            </li>
+            <li class="mini-cart-item">
+              <span class="mini-cart-img" aria-hidden="true">&#127919;</span>
+              <span class="mini-cart-name">Produkt 2 <span class="mini-cart-qty">x1</span></span>
+              <span class="mini-cart-price">9,99 zł</span>
+            </li>
+            <li class="mini-cart-item">
+              <span class="mini-cart-img" aria-hidden="true">&#127919;</span>
+              <span class="mini-cart-name">Produkt 3 <span class="mini-cart-qty">x1</span></span>
+              <span class="mini-cart-price">9,99 zł</span>
+            </li>
+          </ul>
+
+          <div class="summary-divider" aria-hidden="true"></div>
+
+          <dl class="summary-rows">
+            <div class="summary-row">
+              <dt>Produkty (3 szt.)</dt>
+              <dd>39,96 zł</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Rabat</dt>
+              <dd class="text-green">-3,00 zł</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Dostawa (InPost)</dt>
+              <dd>9,99 zł</dd>
+            </div>
+          </dl>
+
+          <div class="summary-divider" aria-hidden="true"></div>
+
+          <dl class="summary-rows">
+            <div class="summary-row summary-total">
+              <dt>Razem</dt>
+              <dd>46,95 zł</dd>
+            </div>
+            <div class="summary-row summary-vat">
+              <dt>w tym VAT (23%)</dt>
+              <dd>8,80 zł</dd>
+            </div>
+          </dl>
+
+          <button type="submit" class="btn-primary-custom w-100 text-center d-block mt-3">
+            złoz zamowienie <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </button>
+
+          <ul class="trust-badges" aria-label="Gwarancje sklepu">
+            <li><i class="bi bi-shield-check" aria-hidden="true"></i> Bezpieczna platnosc SSL</li>
+            <li><i class="bi bi-arrow-return-left" aria-hidden="true"></i> Zwrot 30 dni</li>
+          </ul>
+
+          <a href="koszyk.html" class="btn-outline-custom btn-sm-custom w-100 text-center d-block mt-2">
+            <i class="bi bi-arrow-left" aria-hidden="true"></i> Wróc do koszyka
+          </a>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer id="kontakt">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand brand-font">Dartus<span>Store</span>PL</div>
+        <p class="footer-desc">Profesjonalny sklep ze sprzętem darterskim. Wszystko, czego potrzebujesz do gry na każdym poziomie (nawet na śr. 30 :)).</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="footer-heading">Sklep</div>
+        <a href="produkty.html" class="footer-link">Wszystkie produkty</a>
+        <a href="produkty.html?kat=lotki" class="footer-link">Lotki</a>
+        <a href="produkty.html?kat=tarcze" class="footer-link">Tarcze</a>
+        <a href="produkty.html?kat=akcesoria" class="footer-link">Akcesoria</a>
+        <a href="produkty.html?kat=zestawy" class="footer-link">Zestawy</a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="footer-heading">Informacje</div>
+        <a href="#" class="footer-link">O nas</a>
+        <a href="#" class="footer-link">Regulamin</a>
+        <a href="#" class="footer-link">Polityka prywatności</a>
+        <a href="#" class="footer-link">Dostawa i zwroty</a>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-heading">Kontakt</div>
+        <p class="footer-link"><i class="bi bi-envelope me-2"></i>kontakt@dartusstorepl.netlify.app</p>
+        <p class="footer-link"><i class="bi bi-telephone me-2"></i>+48 123 456 789</p>
+        <p class="footer-link"><i class="bi bi-clock me-2"></i>WYW :)</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 DartusStorePL</span>
+      <span>Systemy CMS 2025/26</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

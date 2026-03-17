@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Koszyk zakupowy DartusStorePL - przejrzyj wybrane produkty i przejdz do zamowienia.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Julian Machowski 4TP">
+
+  <title>Koszyk - DartusStorePL</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/koszyk.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Dartus<span>Store</span>PL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Przelacz nawigacje">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona glowna</a></li>
+        <li class="nav-item"><a class="nav-link" href="produkty.html">Produkty</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#brands">Marki</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="produkty.html" class="text-decoration-none nav-search-link" aria-label="Wyszukaj">
+          <i class="bi bi-search fs-5" aria-hidden="true"></i>
+        </a>
+        <a href="koszyk.html" class="btn-cart text-decoration-none" aria-label="Koszyk, 3 produkty">
+          <i class="bi bi-bag" aria-hidden="true"></i> Koszyk <span class="cart-badge">3</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <nav aria-label="Sciezka nawigacyjna">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Strona glowna</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Koszyk</li>
+      </ol>
+    </nav>
+    <h1 class="page-title">Twoj <span>koszyk</span></h1>
+    <p class="page-subtitle">Masz <strong>3</strong> produkty w koszyku</p>
+  </div>
+</header>
+
+<div class="checkout-steps">
+  <div class="container">
+    <ol class="steps-list" aria-label="Etapy zamowienia">
+      <li class="step active" aria-current="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <span class="step-label">Koszyk</span>
+      </li>
+      <li class="step-divider" aria-hidden="true"></li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <span class="step-label">Zamowienie</span>
+      </li>
+      <li class="step-divider" aria-hidden="true"></li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <span class="step-label">Platnosc</span>
+      </li>
+      <li class="step-divider" aria-hidden="true"></li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">4</span>
+        <span class="step-label">Potwierdzenie</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<main>
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+        <div class="cart-infobar">
+          <i class="bi bi-truck" aria-hidden="true"></i>
+          Dodaj jeszcze <strong>49,01 zł</strong> do darmowej dostawy!
+          <div class="cart-infobar-progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Postep do darmowej dostawy 80%">
+            <div class="cart-infobar-bar"></div>
+          </div>
+        </div>
+
+        <div class="cart-table-head d-none d-md-grid">
+          <span>Produkt</span>
+          <span class="text-center">Ilosc</span>
+          <span class="text-end">Cena</span>
+          <span class="text-end">Razem</span>
+          <span></span>
+        </div>
+ 
+        <article class="cart-item">
+          <div class="cart-item-img" role="img" aria-label="Produkt 1">&#127919;</div>
+          <div class="cart-item-info">
+            <div class="cart-item-badge badge-new">Nowosc</div>
+            <h2 class="cart-item-name">Produkt 1</h2>
+            <div class="cart-item-meta">Firma &bull; Wariant: Standardowy</div>
+            <div class="cart-item-price-mob">9,99 zł / szt.</div>
+          </div>
+          <div class="cart-item-qty">
+            <button type="button" class="qty-btn" aria-label="Zmniejsz ilosc">
+              <i class="bi bi-dash" aria-hidden="true"></i>
+            </button>
+            <input type="number" class="qty-input" value="2" min="1" max="99" aria-label="Ilosc sztuk">
+            <button type="button" class="qty-btn" aria-label="Zwieksz ilosc">
+              <i class="bi bi-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="cart-item-unit d-none d-md-block">9,99 zł</div>
+          <div class="cart-item-total">19,98 zł</div>
+          <div class="cart-item-remove">
+            <button type="button" class="remove-btn" aria-label="Usun Produkt 1 z koszyka">
+              <i class="bi bi-trash" aria-hidden="true"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="cart-item">
+          <div class="cart-item-img" role="img" aria-label="Produkt 2">&#127919;</div>
+          <div class="cart-item-info">
+            <div class="cart-item-badge badge-hot">HIT</div>
+            <h2 class="cart-item-name">Produkt 2</h2>
+            <div class="cart-item-meta">Firma &bull; Wariant: Standardowy</div>
+            <div class="cart-item-price-mob">9,99 zł / szt.</div>
+          </div>
+          <div class="cart-item-qty">
+            <button type="button" class="qty-btn" aria-label="Zmniejsz ilosc">
+              <i class="bi bi-dash" aria-hidden="true"></i>
+            </button>
+            <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Ilosc sztuk">
+            <button type="button" class="qty-btn" aria-label="Zwieksz ilosc">
+              <i class="bi bi-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="cart-item-unit d-none d-md-block">9,99 zł</div>
+          <div class="cart-item-total">9,99 zł</div>
+          <div class="cart-item-remove">
+            <button type="button" class="remove-btn" aria-label="Usun Produkt 2 z koszyka">
+              <i class="bi bi-trash" aria-hidden="true"></i>
+            </button>
+          </div>
+        </article>
+
+        <article class="cart-item">
+          <div class="cart-item-img" role="img" aria-label="Produkt 3">&#127919;</div>
+          <div class="cart-item-info">
+            <span class="cart-item-badge badge-sale">Promocja</span>
+            <h2 class="cart-item-name">Produkt 3</h2>
+            <div class="cart-item-meta">Firma &bull; Wariant: Standardowy</div>
+            <div class="cart-item-price-mob"><s>12,99 zł</s> 9,99 zł / szt.</div>
+          </div>
+          <div class="cart-item-qty">
+            <button type="button" class="qty-btn" aria-label="Zmniejsz ilosc">
+              <i class="bi bi-dash" aria-hidden="true"></i>
+            </button>
+            <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Ilosc sztuk">
+            <button type="button" class="qty-btn" aria-label="Zwieksz ilosc">
+              <i class="bi bi-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="cart-item-unit d-none d-md-block">9,99 zł</div>
+          <div class="cart-item-total">9,99 zł</div>
+          <div class="cart-item-remove">
+            <button type="button" class="remove-btn" aria-label="Usun Produkt 3 z koszyka">
+              <i class="bi bi-trash" aria-hidden="true"></i>
+            </button>
+          </div>
+        </article>
+
+        <div class="cart-coupon">
+          <label for="couponInput" class="visually-hidden">Kod rabatowy</label>
+          <input type="text" id="couponInput" class="coupon-input" placeholder="Kod rabatowy..." autocomplete="off">
+          <button type="button" class="coupon-btn">Zastosuj</button>
+        </div>
+
+        <div class="mt-3">
+          <a href="produkty.html" class="btn-outline-custom btn-sm-custom">
+            <i class="bi bi-arrow-left" aria-hidden="true"></i> Kontynuuj zakupy
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <aside class="summary-card" aria-label="Podsumowanie zamowienia">
+          <h2 class="summary-title">Podsumowanie</h2>
+
+          <dl class="summary-rows">
+            <div class="summary-row">
+              <dt>Produkty (3 szt.)</dt>
+              <dd>39,96 zł</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Rabat</dt>
+              <dd class="text-green">-3,00 zł</dd>
+            </div>
+            <div class="summary-row">
+              <dt>Dostawa</dt>
+              <dd>9,99 zł</dd>
+            </div>
+          </dl>
+
+          <div class="summary-divider" aria-hidden="true"></div>
+
+          <dl class="summary-rows">
+            <div class="summary-row summary-total">
+              <dt>Razem</dt>
+              <dd>46,95 zł</dd>
+            </div>
+            <div class="summary-row summary-vat">
+              <dt>w tym VAT (23%)</dt>
+              <dd>8,80 zł</dd>
+            </div>
+          </dl>
+
+          <a href="zamowienie.html" class="btn-primary-custom w-100 text-center d-block mt-3">
+            Przejdz do zamowienia <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <div class="shipping-methods">
+            <div class="shipping-heading">Metoda dostawy</div>
+            <div class="shipping-option-list" role="radiogroup" aria-label="Wybierz metode dostawy">
+
+              <label class="shipping-option">
+                <input type="radio" name="shipping" value="inpost" checked>
+                <span class="shipping-option-body">
+                  <span class="shipping-icon"><i class="bi bi-box" aria-hidden="true"></i></span>
+                  <span>
+                    <span class="shipping-name">InPost Paczkomat</span>
+                    <span class="shipping-time">1-2 dni robocze</span>
+                  </span>
+                </span>
+                <span class="shipping-price">9,99 zł</span>
+              </label>
+
+              <label class="shipping-option">
+                <input type="radio" name="shipping" value="dpd">
+                <span class="shipping-option-body">
+                  <span class="shipping-icon"><i class="bi bi-truck" aria-hidden="true"></i></span>
+                  <span>
+                    <span class="shipping-name">Kurier DPD</span>
+                    <span class="shipping-time">1-3 dni robocze</span>
+                  </span>
+                </span>
+                <span class="shipping-price">9,99 zł</span>
+              </label>
+
+              <label class="shipping-option">
+                <input type="radio" name="shipping" value="free">
+                <span class="shipping-option-body">
+                  <span class="shipping-icon"><i class="bi bi-gift" aria-hidden="true"></i></span>
+                  <span>
+                    <span class="shipping-name">Odbior osobisty</span>
+                    <span class="shipping-time">Umow termin</span>
+                  </span>
+                </span>
+                <span class="shipping-price text-green">Gratis</span>
+              </label>
+
+            </div>
+          </div>
+
+          <ul class="trust-badges" aria-label="Gwarancje sklepu">
+            <li><i class="bi bi-shield-check" aria-hidden="true"></i> Bezpieczna platnosc</li>
+            <li><i class="bi bi-arrow-return-left" aria-hidden="true"></i> Zwrot 30 dni</li>
+            <li><i class="bi bi-lock" aria-hidden="true"></i> Szyfrowane polaczenie SSL</li>
+          </ul>
+
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer id="kontakt">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand brand-font">Dartus<span>Store</span>PL</div>
+        <p class="footer-desc">Profesjonalny sklep ze sprzętem darterskim. Wszystko, czego potrzebujesz do gry na każdym poziomie (nawet na śr. 30 :)).</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="footer-heading">Sklep</div>
+        <a href="produkty.html" class="footer-link">Wszystkie produkty</a>
+        <a href="produkty.html?kat=lotki" class="footer-link">Lotki</a>
+        <a href="produkty.html?kat=tarcze" class="footer-link">Tarcze</a>
+        <a href="produkty.html?kat=akcesoria" class="footer-link">Akcesoria</a>
+        <a href="produkty.html?kat=zestawy" class="footer-link">Zestawy</a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="footer-heading">Informacje</div>
+        <a href="#" class="footer-link">O nas</a>
+        <a href="#" class="footer-link">Regulamin</a>
+        <a href="#" class="footer-link">Polityka prywatności</a>
+        <a href="#" class="footer-link">Dostawa i zwroty</a>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-heading">Kontakt</div>
+        <p class="footer-link"><i class="bi bi-envelope me-2"></i>kontakt@dartusstorepl.netlify.app</p>
+        <p class="footer-link"><i class="bi bi-telephone me-2"></i>+48 123 456 789</p>
+        <p class="footer-link"><i class="bi bi-clock me-2"></i>WYW :)</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 DartusStorePL</span>
+      <span>Systemy CMS 2025/26</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

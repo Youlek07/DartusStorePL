@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DartusStorePL - Sklep Sprzętu Darterskiego</title>
+  <meta name="description" content="DartusStorePL - profesjonalny sklep z sprzętem darterskim. Lotki, tarcze, akcesoria dla graczy każdego poziomu. Darmowa dostawa od 199 zł.">
+  <meta name="keywords" content="dartki, lotki, tarcza do darta, sprzęt darterski, sklep dart, DartusStorePL">  
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Julian Machowski 4TP">
+
+  <link rel="canonical" href="https://dartusstorepl.netlify.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dartusstorepl.netlify.app/">
+  <meta property="og:site_name" content="DartusStorePL">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="DartusStorePL - Sklep Sprzętu Darterskiego">
+  <meta property="og:description" content="Profesjonalny sprzęt darterski. Lotki, tarcze, akcesoria najlepszych marek. Darmowa dostawa od 199 zł.">
+  <meta property="og:image" content="https://dartusstorepl.netlify.app/assets/img/DartusStorePLicon.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DartusStorePL - sprzęt darterski">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DartusStorePL - Sklep Sprzętu Darterskiego">
+  <meta name="twitter:description" content="Profesjonalny sprzęt darterski. Lotki, tarcze, akcesoria najlepszych marek. Darmowa dostawa od 199 zł.">
+  <meta name="twitter:image" content="https://dartusstorepl.netlify.app/assets/img/DartusStorePLicon.png">
+  <meta name="twitter:image:alt" content="DartusStorePL - sprzęt darterski">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Dartus<span>Store</span>PL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Przełącz nawigację">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="produkty.html">Produkty</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#brands">Marki</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="produkty.html" class="text-decoration-none nav-search-link" aria-label="Wyszukaj">
+          <i class="bi bi-search fs-5"></i>
+        </a>
+        <a href="koszyk.html" class="btn-cart text-decoration-none">
+          <i class="bi bi-bag"></i> Koszyk <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-dart-ring" aria-hidden="true"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 hero-content">
+        <p class="hero-eyebrow">Profesjonalny sprzęt darterski</p>
+        <h1 class="hero-title">Celuj<br>w <span>doskonałość</span></h1>
+        <p class="hero-sub">Lotki, tarcze i akcesoria dla graczy każdego poziomu - od amatorów po zawodowców. Znajdź sprzęt, który podniesie poziom Twojej gry.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="produkty.html" class="btn-primary-custom">Zobacz produkty &rarr;</a>
+          <a href="index.html#categories" class="btn-outline-custom">Przeglądaj kategorie</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Produktów</div>
+          </div>
+          <div>
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Marek</div>
+          </div>
+          <div>
+            <div class="stat-num">4.9★</div>
+            <div class="stat-label">Ocena klientów</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ticker" aria-label="Promocje i ogłoszenia">
+  <div class="ticker-inner" aria-hidden="true">
+    <span>Darmowa dostawa od 199 zł</span>
+    <span>Tylko NAJLEPSZE marki</span>
+    <span>Zwrot 30 dni bez pytań</span>
+    <span>Gwarancja najniższej ceny</span>
+    <span>Darmowa dostawa od 199 zł</span>
+    <span>Tylko NAJLEPSZE marki</span>
+    <span>Zwrot 30 dni bez pytań</span>
+    <span>Gwarancja najniższej ceny</span>
+  </div>
+</section>
+
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <p class="section-eyebrow">Asortyment</p>
+        <h2 class="section-title">Kategorie produktów</h2>
+        <p class="section-sub">Wszystko do gry w darta w jednym miejscu</p>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="produkty.html?kat=lotki" class="cat-card">
+          <img src="assets/img/categories/lotki.webp" alt="Lotki darterskie" height="100"  loading="lazy">
+          <div class="cat-name">Lotki</div>
+          <div class="cat-count">0 produktów</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="produkty.html?kat=tarcze" class="cat-card">
+          <img src="assets/img/categories/tarcza.webp" alt="Tarcze darterskie" height="100" loading="lazy">
+          <div class="cat-name">Tarcze</div>
+          <div class="cat-count">0 produkty</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="produkty.html?kat=groty" class="cat-card">
+          <img src="assets/img/categories/groty.webp" alt="Groty darterskie" height="100" loading="lazy">
+          <div class="cat-name">Groty</div>
+          <div class="cat-count">0 produktów</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="produkty.html?kat=lotki-piorka" class="cat-card">
+          <img src="assets/img/categories/piorko.webp" alt="Piórka darterskie" height="100" loading="lazy">
+          <div class="cat-name">Piórka</div>
+          <div class="cat-count">0 produktów</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="produkty.html?kat=casy" class="cat-card">
+          <img src="assets/img/categories/case.webp" alt="Casy darterskie" height="100" loading="lazy">
+          <div class="cat-name">Casy</div>
+          <div class="cat-count">0 produkty</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <a href="produkty.html?kat=akcesoria" class="cat-card">
+          <img src="assets/img/categories/akcesoria.webp" alt="Akcesoria darterskie" height="100" loading="lazy">
+          <div class="cat-name">Akcesoria</div>
+          <div class="cat-count">0 produktów</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="produkty">
+  <div class="container">
+    <div class="row mb-4 align-items-end">
+      <div class="col">
+        <p class="section-eyebrow">Bestsellery</p>
+        <h2 class="section-title">Polecane produkty</h2>
+      </div>
+      <div class="col-auto">
+        <a href="produkty.html" class="btn-outline-custom btn-sm-custom">
+          Wszystkie produkty →
+        </a>
+      </div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-new">Nowość</span>
+            <h3 class="product-name">Produkt 1</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-hot">HIT</span>
+            <h3 class="product-name">Produkt 2</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-sale">Promocja</span>
+            <h3 class="product-name">Produkt 3</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+              <span class="product-price-old">10,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-new">Nowość</span>
+            <h3 class="product-name">Produkt 4</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-hot">HIT</span>
+            <h3 class="product-name">Produkt 5</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-hot">Hit</span>
+            <h3 class="product-name">Produkt 6</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-hot">HIT</span>
+            <h3 class="product-name">Produkt 7</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <article class="product-card h-100">
+          <section class="product-img-placeholder" aria-label="Opis produktu">
+            🎯
+          </section>
+          <div class="product-body">
+            <span class="product-badge badge-sale">Promocja</span>
+            <h3 class="product-name">Produkt 8</h3>
+            <div class="product-brand">Firma</div>
+            <section class="stars" aria-label="Ocena 5 na 5">★★★★★</section>
+            <div class="mt-2">
+              <span class="product-price">9,99 zł</span>
+              <span class="product-price-old">10,99 zł</span>
+            </div>
+            <button class="btn-add" type="button">
+              <i class="bi bi-bag-plus"></i> Dodaj do koszyka
+            </button>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="promo-banner">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <p class="section-eyebrow">Oferta specjalna</p>
+          <h2 class="promo-title">Zestaw startowy<br><span>-20% taniej</span></h2>
+          <p class="promo-sub">Kompletny zestaw dla początkujących: lotki, tarcza i akcesoria w jednej cenie.</p>
+          <a href="produkty.html?kat=zestawy" class="btn-primary-custom">Kup zestaw →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands" id="brands">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <p class="section-eyebrow">Dystrybutorzy</p>
+        <h2 class="section-title">Same NAJLEPSZE marki</h2>
+      </div>
+    </div>
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-md-3 col-lg-2"><div class="brand-logo">Target</div></div>
+      <div class="col-6 col-md-3 col-lg-2"><div class="brand-logo">Winmau</div></div>
+      <div class="col-6 col-md-3 col-lg-2"><div class="brand-logo">Unicorn</div></div>
+      <div class="col-6 col-md-3 col-lg-2"><div class="brand-logo">Harrows</div></div>
+      <div class="col-6 col-md-3 col-lg-2"><div class="brand-logo">Red Dragon</div></div>
+      <div class="col-6 col-md-3 col-lg-2"><div class="brand-logo">Gran</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <h2 class="visually-hidden">Zalety sklepu DartusStore</h2>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="bi bi-truck"></i></div>
+          <div class="feature-title">Szybka dostawa</div>
+          <div class="feature-desc">Wysyłka w 24h, darmowa od 199 zł</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></div>
+          <div class="feature-title">Gwarancja jakości</div>
+          <div class="feature-desc">Autoryzowany dystrybutor wszystkich marek</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="bi bi-arrow-return-left"></i></div>
+          <div class="feature-title">Zwrot 30 dni</div>
+          <div class="feature-desc">Bez pytań, prosty proces zwrotu</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true"><i class="bi bi-headset"></i></div>
+          <div class="feature-title">Wsparcie eksperta</div>
+          <div class="feature-desc">Pomoc w wyborze sprzętu dla Twojego stylu gry</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand brand-font">Dartus<span>Store</span>PL</div>
+        <p class="footer-desc">Profesjonalny sklep ze sprzętem darterskim. Wszystko, czego potrzebujesz do gry na każdym poziomie (nawet na śr. 30 :)).</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="footer-heading">Sklep</div>
+        <a href="produkty.html" class="footer-link">Wszystkie produkty</a>
+        <a href="produkty.html?kat=lotki" class="footer-link">Lotki</a>
+        <a href="produkty.html?kat=tarcze" class="footer-link">Tarcze</a>
+        <a href="produkty.html?kat=akcesoria" class="footer-link">Akcesoria</a>
+        <a href="produkty.html?kat=zestawy" class="footer-link">Zestawy</a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="footer-heading">Informacje</div>
+        <a href="#" class="footer-link">O nas</a>
+        <a href="#" class="footer-link">Regulamin</a>
+        <a href="#" class="footer-link">Polityka prywatności</a>
+        <a href="#" class="footer-link">Dostawa i zwroty</a>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-heading">Kontakt</div>
+        <p class="footer-link"><i class="bi bi-envelope me-2"></i>kontakt@dartusstorepl.netlify.app</p>
+        <p class="footer-link"><i class="bi bi-telephone me-2"></i>+48 123 456 789</p>
+        <p class="footer-link"><i class="bi bi-clock me-2"></i>WYW :)</p>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 DartusStorePL</span>
+      <span>Systemy CMS 2025/26</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
