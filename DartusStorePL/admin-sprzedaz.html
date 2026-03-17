@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Panel administracyjny DartusStorePL - zarzadzanie sprzedaza.">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Julian Machowski 4TP">
+  
   <title>Sprzedaż - DartusStorePL Admin</title>
 
-  <link rel="stylesheet" href="css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-5.3.8-dist/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/admin.css">
 
@@ -29,12 +31,44 @@
         <i class="bi bi-eye" aria-hidden="true"></i>
         <span class="d-none d-md-inline">Podgląd sklepu</span>
       </a>
+      <button class="admin-hamburger d-lg-none" type="button"
+        id="adminHamburger" aria-label="Otwórz menu nawigacji"
+        aria-expanded="false" aria-controls="adminMobileNav">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
       <div class="admin-avatar" role="img" aria-label="Zalogowany jako: Admin">
         <i class="bi bi-person-fill" aria-hidden="true"></i>
       </div>
     </div>
   </div>
 </header>
+
+<nav class="admin-mobile-nav" id="adminMobileNav" aria-label="Nawigacja mobilna panelu administracyjnego">
+  <ul class="admin-nav">
+    <li class="admin-nav-section">Sklep</li>
+    <li>
+      <a href="admin-produkty.html" class="admin-nav-link">
+        <i class="bi bi-box-seam" aria-hidden="true"></i> Produkty
+      </a>
+    </li>
+    <li>
+      <a href="admin-sprzedaz.html" class="admin-nav-link active" aria-current="page">
+        <i class="bi bi-cart-check" aria-hidden="true"></i> Sprzedaż
+      </a>
+    </li>
+    <li class="admin-nav-section">Ustawienia</li>
+    <li>
+      <a href="#" class="admin-nav-link">
+        <i class="bi bi-gear" aria-hidden="true"></i> Ustawienia
+      </a>
+    </li>
+    <li>
+      <a href="index.html" class="admin-nav-link">
+        <i class="bi bi-box-arrow-left" aria-hidden="true"></i> Wyloguj
+      </a>
+    </li>
+  </ul>
+</nav>
 
 <div class="admin-layout">
 
@@ -153,6 +187,7 @@
       </div>
     </div>
 
+    <!-- TABELA -->
     <div class="admin-table-wrap">
       <table class="admin-table" aria-label="Lista zamówień">
         <thead>
@@ -190,12 +225,8 @@
               <label for="order-check-1" class="visually-hidden">Zaznacz zamówienie #ZAM-0001</label>
               <input type="checkbox" id="order-check-1" class="admin-checkbox">
             </td>
-            <td>
-              <div class="order-num">#ZAM-0001</div>
-            </td>
-            <td>
-              <div class="table-product-name">Jan Kowalski</div>
-            </td>
+            <td><div class="order-num">#ZAM-0001</div></td>
+            <td><div class="table-product-name">Jan Kowalski</div></td>
             <td>
               <div class="table-product-name">XX.XX.XXXX</div>
               <div class="table-product-meta">XX:XX</div>
@@ -206,15 +237,9 @@
                 <span class="order-product-pill">Produkt 2 x1</span>
               </div>
             </td>
-            <td>
-              <div class="table-price">46,95 zł</div>
-            </td>
-            <td>
-              <div class="table-product-meta">InPost</div>
-            </td>
-            <td>
-              <span class="order-status order-status-new">Nowe</span>
-            </td>
+            <td><div class="table-price">46,95 zł</div></td>
+            <td><div class="table-product-meta">InPost</div></td>
+            <td><span class="order-status order-status-new">Nowe</span></td>
             <td class="col-actions">
               <div class="table-actions">
                 <button type="button" class="action-btn action-edit" aria-label="Podgląd zamówienia #ZAM-0001">
@@ -229,15 +254,11 @@
 
           <tr>
             <td class="col-check">
-              <label for="order-check-1" class="visually-hidden">Zaznacz zamówienie #ZAM-0002</label>
+              <label for="order-check-2" class="visually-hidden">Zaznacz zamówienie #ZAM-0002</label>
               <input type="checkbox" id="order-check-2" class="admin-checkbox">
             </td>
-            <td>
-              <div class="order-num">#ZAM-0002</div>
-            </td>
-            <td>
-              <div class="table-product-name">Jan Kowalski</div>
-            </td>
+            <td><div class="order-num">#ZAM-0002</div></td>
+            <td><div class="table-product-name">Jan Kowalski</div></td>
             <td>
               <div class="table-product-name">XX.XX.XXXX</div>
               <div class="table-product-meta">XX:XX</div>
@@ -248,15 +269,9 @@
                 <span class="order-product-pill">Produkt 2 x1</span>
               </div>
             </td>
-            <td>
-              <div class="table-price">46,95 zł</div>
-            </td>
-            <td>
-              <div class="table-product-meta">InPost</div>
-            </td>
-            <td>
-              <span class="order-status order-status-new">Nowe</span>
-            </td>
+            <td><div class="table-price">46,95 zł</div></td>
+            <td><div class="table-product-meta">InPost</div></td>
+            <td><span class="order-status order-status-new">Nowe</span></td>
             <td class="col-actions">
               <div class="table-actions">
                 <button type="button" class="action-btn action-edit" aria-label="Podgląd zamówienia #ZAM-0002">
@@ -271,15 +286,11 @@
 
           <tr>
             <td class="col-check">
-              <label for="order-check-1" class="visually-hidden">Zaznacz zamówienie #ZAM-0003</label>
+              <label for="order-check-3" class="visually-hidden">Zaznacz zamówienie #ZAM-0003</label>
               <input type="checkbox" id="order-check-3" class="admin-checkbox">
             </td>
-            <td>
-              <div class="order-num">#ZAM-0003</div>
-            </td>
-            <td>
-              <div class="table-product-name">Jan Kowalski</div>
-            </td>
+            <td><div class="order-num">#ZAM-0003</div></td>
+            <td><div class="table-product-name">Jan Kowalski</div></td>
             <td>
               <div class="table-product-name">XX.XX.XXXX</div>
               <div class="table-product-meta">XX:XX</div>
@@ -290,15 +301,9 @@
                 <span class="order-product-pill">Produkt 2 x1</span>
               </div>
             </td>
-            <td>
-              <div class="table-price">46,95 zł</div>
-            </td>
-            <td>
-              <div class="table-product-meta">InPost</div>
-            </td>
-            <td>
-              <span class="order-status order-status-new">Nowe</span>
-            </td>
+            <td><div class="table-price">46,95 zł</div></td>
+            <td><div class="table-product-meta">InPost</div></td>
+            <td><span class="order-status order-status-new">Nowe</span></td>
             <td class="col-actions">
               <div class="table-actions">
                 <button type="button" class="action-btn action-edit" aria-label="Podgląd zamówienia #ZAM-0003">
@@ -313,15 +318,11 @@
 
           <tr>
             <td class="col-check">
-              <label for="order-check-1" class="visually-hidden">Zaznacz zamówienie #ZAM-0004</label>
+              <label for="order-check-4" class="visually-hidden">Zaznacz zamówienie #ZAM-0004</label>
               <input type="checkbox" id="order-check-4" class="admin-checkbox">
             </td>
-            <td>
-              <div class="order-num">#ZAM-0004</div>
-            </td>
-            <td>
-              <div class="table-product-name">Jan Kowalski</div>
-            </td>
+            <td><div class="order-num">#ZAM-0004</div></td>
+            <td><div class="table-product-name">Jan Kowalski</div></td>
             <td>
               <div class="table-product-name">XX.XX.XXXX</div>
               <div class="table-product-meta">XX:XX</div>
@@ -332,15 +333,9 @@
                 <span class="order-product-pill">Produkt 2 x1</span>
               </div>
             </td>
-            <td>
-              <div class="table-price">46,95 zł</div>
-            </td>
-            <td>
-              <div class="table-product-meta">InPost</div>
-            </td>
-            <td>
-              <span class="order-status order-status-new">Nowe</span>
-            </td>
+            <td><div class="table-price">46,95 zł</div></td>
+            <td><div class="table-product-meta">InPost</div></td>
+            <td><span class="order-status order-status-new">Nowe</span></td>
             <td class="col-actions">
               <div class="table-actions">
                 <button type="button" class="action-btn action-edit" aria-label="Podgląd zamówienia #ZAM-0004">
@@ -357,6 +352,7 @@
       </table>
     </div>
 
+    <!-- PAGINACJA -->
     <nav aria-label="Paginacja tabeli zamówień" class="mt-4">
       <div class="admin-pagination">
         <span class="pagination-info">Wyświetlono 1-4 z 0 zamówień</span>
@@ -388,6 +384,15 @@
   if (selectAll) {
     selectAll.addEventListener('change', function () {
       checkboxes.forEach(function (cb) { cb.checked = selectAll.checked; });
+    });
+  }
+
+  var hamburger = document.getElementById('adminHamburger');
+  var mobileNav = document.getElementById('adminMobileNav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', function () {
+      var isOpen = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
     });
   }
 </script>

@@ -43,6 +43,7 @@ h3 {
   border-bottom: 1px solid var(--border);
   z-index: 1000;
 }
+
 .admin-topbar-inner {
   height: 100%;
   display: flex;
@@ -50,11 +51,13 @@ h3 {
   justify-content: space-between;
   padding: 0 1.25rem;
 }
+
 .admin-brand {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
+
 .admin-logo {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.4rem;
@@ -62,9 +65,11 @@ h3 {
   color: var(--cream);
   text-decoration: none;
 }
+
 .admin-logo span {
   color: var(--red);
 }
+
 .admin-label {
   background: rgba(211, 47, 47, 0.15);
   border: 1px solid rgba(211, 47, 47, 0.3);
@@ -75,12 +80,21 @@ h3 {
   letter-spacing: 0.12em;
   padding: 0.15rem 0.55rem;
   border-radius: 4px;
+  display: none;
 }
+
+@media (min-width: 576px) {
+  .admin-label {
+    display: inline-block;
+  }
+}
+
 .admin-topbar-right {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
 .admin-topbar-link {
   color: var(--muted);
   text-decoration: none;
@@ -90,9 +104,11 @@ h3 {
   gap: 0.4rem;
   transition: color 0.2s;
 }
+
 .admin-topbar-link:hover {
   color: var(--cream);
 }
+
 .admin-avatar {
   width: 32px;
   height: 32px;
@@ -123,11 +139,13 @@ h3 {
   height: calc(100vh - 56px);
   overflow-y: auto;
 }
+
 .admin-nav {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .admin-nav-section {
   font-size: 0.65rem;
   font-weight: 700;
@@ -136,6 +154,7 @@ h3 {
   color: #444;
   padding: 1rem 1.25rem 0.4rem;
 }
+
 .admin-nav-link {
   display: flex;
   align-items: center;
@@ -150,15 +169,18 @@ h3 {
     color 0.15s;
   border-left: 2px solid transparent;
 }
+
 .admin-nav-link:hover {
   background: rgba(255, 255, 255, 0.04);
   color: var(--cream);
 }
+
 .admin-nav-link.active {
   background: rgba(211, 47, 47, 0.1);
   color: var(--cream);
   border-left-color: var(--red);
 }
+
 .admin-nav-link i {
   font-size: 1rem;
   width: 18px;
@@ -179,10 +201,12 @@ h3 {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
+
 .admin-page-title {
   font-size: 2rem;
   margin: 0 0 0.2rem;
 }
+
 .admin-page-sub {
   color: var(--muted);
   font-size: 0.85rem;
@@ -206,10 +230,12 @@ h3 {
   font-family: "DM Sans", sans-serif;
   white-space: nowrap;
 }
+
 .btn-primary-admin:hover {
   background: var(--red-h);
   color: #fff;
 }
+
 .btn-secondary-admin {
   background: var(--dark3);
   color: var(--cream);
@@ -223,8 +249,36 @@ h3 {
   font-family: "DM Sans", sans-serif;
   white-space: nowrap;
 }
+
 .btn-secondary-admin:hover {
   border-color: #555;
+}
+
+.btn-danger-admin {
+  background: rgba(211, 47, 47, 0.12);
+  color: var(--red);
+  border: 1px solid rgba(211, 47, 47, 0.25);
+  border-radius: 8px;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.2s;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-danger-admin:hover {
+  background: rgba(211, 47, 47, 0.22);
+}
+
+.btn-sm-admin {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
 }
 
 .admin-stat-card {
@@ -235,7 +289,9 @@ h3 {
   display: flex;
   align-items: center;
   gap: 0.9rem;
+  height: 100%;
 }
+
 .admin-stat-icon {
   width: 44px;
   height: 44px;
@@ -246,28 +302,34 @@ h3 {
   font-size: 1.2rem;
   flex-shrink: 0;
 }
+
 .icon-blue {
   background: rgba(33, 150, 243, 0.12);
   color: #42a5f5;
 }
+
 .icon-green {
   background: rgba(46, 125, 50, 0.12);
   color: var(--green-h);
 }
+
 .icon-orange {
   background: rgba(230, 126, 34, 0.12);
   color: #e67e22;
 }
+
 .icon-red {
   background: rgba(211, 47, 47, 0.12);
   color: var(--red);
 }
+
 .admin-stat-num {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.8rem;
   line-height: 1;
   color: var(--cream);
 }
+
 .admin-stat-label {
   font-size: 0.75rem;
   color: var(--muted);
@@ -282,12 +344,14 @@ h3 {
   margin-bottom: 1rem;
   justify-content: space-between;
 }
+
 .admin-toolbar-left {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.6rem;
 }
+
 .admin-toolbar-right {
   display: flex;
   align-items: center;
@@ -297,6 +361,7 @@ h3 {
 .admin-search-wrap {
   position: relative;
 }
+
 .admin-search-icon {
   position: absolute;
   left: 0.75rem;
@@ -306,6 +371,7 @@ h3 {
   font-size: 0.9rem;
   pointer-events: none;
 }
+
 .admin-search {
   background: var(--dark2);
   border: 1px solid var(--border);
@@ -317,13 +383,16 @@ h3 {
   width: 220px;
   transition: border-color 0.2s;
 }
+
 .admin-search:focus {
   outline: none;
   border-color: var(--red);
 }
+
 .admin-search::placeholder {
   color: #555;
 }
+
 .admin-search::-webkit-search-cancel-button {
   display: none;
 }
@@ -339,10 +408,12 @@ h3 {
   cursor: pointer;
   transition: border-color 0.2s;
 }
+
 .admin-select:focus {
   outline: none;
   border-color: var(--red);
 }
+
 .admin-select option {
   background: var(--dark2);
 }
@@ -353,14 +424,17 @@ h3 {
   border-radius: 12px;
   overflow-x: auto;
 }
+
 .admin-table {
   width: 100%;
   border-collapse: collapse;
   white-space: nowrap;
 }
+
 .admin-table thead tr {
   border-bottom: 1px solid var(--border);
 }
+
 .admin-table thead th {
   padding: 0.75rem 1rem;
   font-size: 0.72rem;
@@ -370,16 +444,20 @@ h3 {
   color: var(--muted);
   text-align: left;
 }
+
 .admin-table tbody tr {
   border-bottom: 1px solid var(--border);
   transition: background 0.15s;
 }
+
 .admin-table tbody tr:last-child {
   border-bottom: none;
 }
+
 .admin-table tbody tr:hover {
   background: rgba(255, 255, 255, 0.02);
 }
+
 .admin-table tbody td {
   padding: 0.85rem 1rem;
   vertical-align: middle;
@@ -388,9 +466,11 @@ h3 {
 .col-check {
   width: 40px;
 }
+
 .col-img {
   width: 56px;
 }
+
 .col-actions {
   width: 90px;
 }
@@ -411,6 +491,7 @@ h3 {
   font-family: "DM Sans", sans-serif;
   transition: color 0.2s;
 }
+
 .sort-btn:hover {
   color: var(--cream);
 }
@@ -438,6 +519,7 @@ h3 {
   font-weight: 600;
   color: var(--cream);
 }
+
 .table-product-meta {
   font-size: 0.75rem;
   color: var(--muted);
@@ -452,6 +534,7 @@ h3 {
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
 }
+
 .cat-badge {
   background: rgba(33, 150, 243, 0.12);
   color: #64b5f6;
@@ -462,6 +545,7 @@ h3 {
   font-weight: 700;
   color: var(--green-h);
 }
+
 .table-price-old {
   font-size: 0.75rem;
   color: var(--muted);
@@ -475,27 +559,34 @@ h3 {
   font-size: 0.85rem;
   font-weight: 600;
 }
+
 .stock-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
 }
+
 .stock-ok .stock-dot {
   background: var(--green-h);
 }
+
 .stock-ok {
   color: var(--green-h);
 }
+
 .stock-low .stock-dot {
   background: #e67e22;
 }
+
 .stock-low {
   color: #e67e22;
 }
+
 .stock-none .stock-dot {
   background: var(--red);
 }
+
 .stock-none {
   color: var(--red);
 }
@@ -506,12 +597,14 @@ h3 {
   gap: 0.5rem;
   cursor: pointer;
 }
+
 .status-toggle input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
+
 .status-slider {
   position: relative;
   width: 34px;
@@ -521,6 +614,7 @@ h3 {
   transition: background 0.2s;
   flex-shrink: 0;
 }
+
 .status-slider::after {
   content: "";
   position: absolute;
@@ -534,17 +628,21 @@ h3 {
     transform 0.2s,
     background 0.2s;
 }
+
 .status-toggle input:checked + .status-slider {
   background: rgba(46, 125, 50, 0.3);
 }
+
 .status-toggle input:checked + .status-slider::after {
   transform: translateX(16px);
   background: var(--green-h);
 }
+
 .status-text {
   font-size: 0.78rem;
   color: var(--muted);
 }
+
 .status-toggle input:checked ~ .status-text {
   color: var(--green-h);
 }
@@ -554,6 +652,7 @@ h3 {
   gap: 0.3rem;
   justify-content: flex-end;
 }
+
 .action-btn {
   width: 30px;
   height: 30px;
@@ -569,18 +668,22 @@ h3 {
     background 0.15s,
     color 0.15s;
 }
+
 .action-edit {
   background: rgba(33, 150, 243, 0.1);
   color: #64b5f6;
 }
+
 .action-edit:hover {
   background: rgba(33, 150, 243, 0.2);
   color: #90caf9;
 }
+
 .action-delete {
   background: rgba(211, 47, 47, 0.1);
   color: var(--red);
 }
+
 .action-delete:hover {
   background: rgba(211, 47, 47, 0.2);
   color: var(--red-h);
@@ -593,10 +696,12 @@ h3 {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 .pagination-info {
   font-size: 0.82rem;
   color: var(--muted);
 }
+
 .pagination .page-link {
   background: var(--dark2);
   border-color: var(--border);
@@ -608,16 +713,19 @@ h3 {
     color 0.15s,
     border-color 0.15s;
 }
+
 .pagination .page-link:hover {
   background: var(--dark3);
   border-color: #555;
   color: var(--cream);
 }
+
 .pagination .page-item.active .page-link {
   background: var(--red);
   border-color: var(--red);
   color: #fff;
 }
+
 .pagination .page-item.disabled .page-link {
   background: var(--dark2);
   border-color: var(--border);
@@ -631,6 +739,7 @@ h3 {
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
+
 .admin-form-section-title {
   font-size: 1rem;
   font-weight: 700;
@@ -639,6 +748,7 @@ h3 {
   padding-bottom: 0.65rem;
   border-bottom: 1px solid var(--border);
 }
+
 .admin-label {
   display: block;
   font-size: 0.75rem;
@@ -648,6 +758,7 @@ h3 {
   color: #aaa;
   margin-bottom: 0.35rem;
 }
+
 .admin-input {
   width: 100%;
   background: var(--dark3);
@@ -659,17 +770,21 @@ h3 {
   font-family: "DM Sans", sans-serif;
   transition: border-color 0.2s;
 }
+
 .admin-input:focus {
   outline: none;
   border-color: var(--red);
 }
+
 .admin-input::placeholder {
   color: #555;
 }
+
 .admin-textarea {
   resize: vertical;
   min-height: 100px;
 }
+
 .admin-input-hint {
   font-size: 0.72rem;
   color: #555;
@@ -686,14 +801,17 @@ h3 {
   font-size: 0.78rem;
   color: var(--muted);
 }
+
 .admin-breadcrumb a {
   color: var(--muted);
   text-decoration: none;
   transition: color 0.2s;
 }
+
 .admin-breadcrumb a:hover {
   color: var(--cream);
 }
+
 .admin-breadcrumb li:last-child {
   color: var(--cream);
 }
@@ -706,26 +824,31 @@ h3 {
   transition: border-color 0.2s;
   margin-bottom: 1rem;
 }
+
 .upload-zone:hover {
   border-color: #555;
 }
+
 .upload-zone-icon {
   font-size: 2.5rem;
   color: #444;
   display: block;
   margin-bottom: 0.5rem;
 }
+
 .upload-zone-text {
   color: var(--muted);
   font-size: 0.88rem;
   margin-bottom: 0.75rem;
 }
+
 .upload-zone-hint {
   color: #555;
   font-size: 0.75rem;
   margin-top: 0.6rem;
   margin-bottom: 0;
 }
+
 .upload-file-label {
   cursor: pointer;
   display: inline-flex;
@@ -736,6 +859,7 @@ h3 {
   gap: 0.6rem;
   flex-wrap: wrap;
 }
+
 .upload-thumb {
   width: 80px;
   height: 80px;
@@ -750,6 +874,7 @@ h3 {
   position: relative;
   overflow: hidden;
 }
+
 .upload-thumb-empty {
   background: var(--dark3);
   color: #444;
@@ -757,10 +882,12 @@ h3 {
   cursor: pointer;
   transition: border-color 0.2s;
 }
+
 .upload-thumb-empty span {
   font-size: 0.65rem;
   color: #555;
 }
+
 .upload-thumb-empty:hover {
   border-color: #555;
 }
@@ -771,11 +898,13 @@ h3 {
   flex-wrap: wrap;
   margin-bottom: 0.6rem;
 }
+
 .existing-img-wrap {
   position: relative;
   width: 80px;
   height: 80px;
 }
+
 .existing-img {
   width: 80px;
   height: 80px;
@@ -787,6 +916,7 @@ h3 {
   justify-content: center;
   font-size: 2rem;
 }
+
 .existing-img-badge {
   position: absolute;
   bottom: 4px;
@@ -798,6 +928,7 @@ h3 {
   padding: 1px 5px;
   border-radius: 3px;
 }
+
 .existing-img-remove {
   position: absolute;
   top: -6px;
@@ -815,6 +946,7 @@ h3 {
   cursor: pointer;
   transition: background 0.2s;
 }
+
 .existing-img-remove:hover {
   background: var(--red-h);
 }
@@ -826,13 +958,16 @@ h3 {
   padding: 0.55rem 0;
   border-bottom: 1px solid var(--border);
 }
+
 .admin-switch-row:last-child {
   border-bottom: none;
 }
+
 .admin-switch-label {
   font-size: 0.85rem;
   color: #aaa;
 }
+
 .admin-switch {
   position: relative;
   display: inline-block;
@@ -840,12 +975,14 @@ h3 {
   height: 20px;
   flex-shrink: 0;
 }
+
 .admin-switch input {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
+
 .admin-switch-slider {
   position: absolute;
   inset: 0;
@@ -854,6 +991,7 @@ h3 {
   transition: background 0.2s;
   cursor: pointer;
 }
+
 .admin-switch-slider::after {
   content: "";
   position: absolute;
@@ -867,9 +1005,11 @@ h3 {
     transform 0.2s,
     background 0.2s;
 }
+
 .admin-switch input:checked + .admin-switch-slider {
   background: rgba(46, 125, 50, 0.35);
 }
+
 .admin-switch input:checked + .admin-switch-slider::after {
   transform: translateX(18px);
   background: var(--green-h);
@@ -880,6 +1020,7 @@ h3 {
   flex-direction: column;
   gap: 0.15rem;
 }
+
 .category-check-item {
   display: flex;
   align-items: center;
@@ -893,10 +1034,12 @@ h3 {
     background 0.15s,
     color 0.15s;
 }
+
 .category-check-item:hover {
   background: rgba(255, 255, 255, 0.04);
   color: var(--cream);
 }
+
 .category-check-item input[type="radio"] {
   accent-color: var(--red);
 }
@@ -904,6 +1047,7 @@ h3 {
 .price-input-wrap {
   position: relative;
 }
+
 .price-input-prefix {
   position: absolute;
   left: 0.85rem;
@@ -913,6 +1057,7 @@ h3 {
   font-size: 0.85rem;
   pointer-events: none;
 }
+
 .price-input {
   padding-left: 2.2rem !important;
 }
@@ -944,16 +1089,19 @@ h3 {
   gap: 0.75rem;
   margin-bottom: 1.5rem;
 }
+
 .edit-status-info {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
 .edit-status-actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
 .edit-status-badge {
   font-size: 0.72rem;
   font-weight: 700;
@@ -962,40 +1110,17 @@ h3 {
   padding: 0.2rem 0.65rem;
   border-radius: 20px;
 }
+
 .status-active {
   background: rgba(46, 125, 50, 0.15);
   color: var(--green-h);
   border: 1px solid rgba(46, 125, 50, 0.3);
 }
+
 .status-draft {
   background: rgba(255, 255, 255, 0.06);
   color: #aaa;
   border: 1px solid #333;
-}
-
-.btn-danger-admin {
-  background: rgba(211, 47, 47, 0.12);
-  color: var(--red);
-  border: 1px solid rgba(211, 47, 47, 0.25);
-  border-radius: 8px;
-  padding: 0.6rem 1.25rem;
-  font-size: 0.88rem;
-  font-weight: 700;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: background 0.2s;
-  font-family: "DM Sans", sans-serif;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.btn-danger-admin:hover {
-  background: rgba(211, 47, 47, 0.22);
-}
-.btn-sm-admin {
-  padding: 0.4rem 0.85rem;
-  font-size: 0.8rem;
 }
 
 .history-list {
@@ -1003,15 +1128,18 @@ h3 {
   padding: 0;
   margin: 0;
 }
+
 .history-item {
   display: flex;
   gap: 0.75rem;
   padding: 0.6rem 0;
   border-bottom: 1px solid var(--border);
 }
+
 .history-item:last-child {
   border-bottom: none;
 }
+
 .history-dot {
   width: 8px;
   height: 8px;
@@ -1020,10 +1148,12 @@ h3 {
   flex-shrink: 0;
   margin-top: 5px;
 }
+
 .history-action {
   font-size: 0.85rem;
   color: var(--cream);
 }
+
 .history-meta {
   font-size: 0.75rem;
   color: var(--muted);
@@ -1036,6 +1166,7 @@ h3 {
   color: var(--cream);
   font-family: monospace;
 }
+
 .order-status {
   display: inline-block;
   font-size: 0.7rem;
@@ -1046,26 +1177,32 @@ h3 {
   border-radius: 20px;
   white-space: nowrap;
 }
+
 .order-status-new {
   background: rgba(33, 150, 243, 0.12);
   color: #64b5f6;
 }
+
 .order-status-paid {
   background: rgba(156, 39, 176, 0.12);
   color: #ce93d8;
 }
+
 .order-status-shipped {
   background: rgba(255, 152, 0, 0.12);
   color: #ffb74d;
 }
+
 .order-status-delivered {
   background: rgba(46, 125, 50, 0.12);
   color: var(--green-h);
 }
+
 .order-status-cancelled {
   background: rgba(211, 47, 47, 0.12);
   color: var(--red);
 }
+
 .order-status-refund {
   background: rgba(255, 255, 255, 0.06);
   color: #aaa;
@@ -1076,6 +1213,7 @@ h3 {
   flex-wrap: wrap;
   gap: 0.3rem;
 }
+
 .order-product-pill {
   background: var(--dark3);
   border: 1px solid var(--border);
@@ -1098,9 +1236,39 @@ h3 {
   font-family: "DM Sans", sans-serif;
   color-scheme: dark;
 }
+
 .admin-date-input:focus {
   outline: none;
   border-color: var(--red);
+}
+
+.admin-hamburger {
+  background: none;
+  border: none;
+  color: var(--cream);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.admin-mobile-nav {
+  display: none;
+  background: var(--dark2);
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.admin-mobile-nav.open {
+  display: block;
 }
 
 @media (max-width: 991px) {
