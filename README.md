@@ -3,8 +3,8 @@
 Projekt sklepu internetowego ze sprzętem darterskim (część widoków), wykonany w ramach przedmiotu **Systemy CMS 2025/26**.
 
 ## 4TP JULIAN MACHOWSKI
-Hostowana strona: https://dartusstorepl.netlify.app/
-
+Hostowana strona 1: https://dartusstorepl.netlify.app/
+Hostowana strona 2: https://dartus-store-pl.vercel.app/
 ## Widoki stron
 
 | Plik | Opis |
