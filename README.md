@@ -3,9 +3,9 @@ Projekt sklepu internetowego ze sprzętem darterskim, wykonany w ramach przedmio
 
 ## 4TP JULIAN MACHOWSKI
 
-Hostowana strona 1: https://dartusstorepl.netlify.app/ // Wersja po etapie 1
+Hostowana strona 1 `Wersja po etapie 1`: https://dartusstorepl.netlify.app/ 
 
-Hostowana strona 2: https://dartus-store-pl.vercel.app/ // Wersja po etapie 2
+Hostowana strona 2 `Wersja po etapie 2`: https://dartus-store-pl.vercel.app/ 
 
 ---
 
@@ -74,6 +74,7 @@ Statyczne widoki wszystkich podstron sklepu zgodne ze standardami W3C, w pełni 
 ## Etap II - JavaScript
 
 Logika działania sklepu po stronie przeglądarki. Kod pisany obiektowo, dane wysyłane przez AJAX (`async/await` + `MockApi` symulujący `fetch` - gotowy do podpięcia pod backend).
+
 ---
 
 Systemy CMS 2025/26
