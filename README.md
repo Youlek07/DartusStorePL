@@ -3,8 +3,8 @@ Projekt sklepu internetowego ze sprzętem darterskim, wykonany w ramach przedmio
 
 ## 4TP JULIAN MACHOWSKI
 
-Hostowana strona 1: https://dartusstorepl.netlify.app/  
-Hostowana strona 2: https://dartus-store-pl.vercel.app/
+Hostowana strona 1: https://dartusstorepl.netlify.app/ // Wersja po etapie 1
+Hostowana strona 2: https://dartus-store-pl.vercel.app/ // Wersja po etapie 2
 
 ---
 
